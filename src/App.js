@@ -1,7 +1,16 @@
-import "./App.css";
+import "./App.scss";
+import Nav from "./components/Nav";
+import Intro from "./Pages/intro";
+
 
 function App() {
-	return <div className='App'>Monse</div>;
+	return (
+		<div className='container'>
+      <Nav/>
+			Monse
+			<Intro />
+		</div>
+	);
 }
 
 export default App;

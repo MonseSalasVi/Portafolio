@@ -1,0 +1,11 @@
+$verdeClaro: #bbd4ce;
+$verde: #679186;
+$azul: #264e70;
+$crema: #fdebd3;
+$rosa: #f9b4ab;
+
+@import './components//nav.scss';
+.container {
+  background: $crema;
+  
+}
