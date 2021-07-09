@@ -21,18 +21,15 @@ export default function SearchAppBar() {
 						</Typography>
 					</div>
 					<div>
+					<Button aria-controls='customized-menu' aria-haspopup='true'>
+							<AccountCircleIcon fontSize='small' />
+						</Button>
 						<Button aria-controls='customized-menu' aria-haspopup='true'>
 							<CardTravelIcon fontSize='small' />
 						</Button>
 						<Button aria-controls='customized-menu' aria-haspopup='true'>
 							<SchoolIcon fontSize='small' />
-						</Button>
-						<Button aria-controls='customized-menu' aria-haspopup='true'>
-							<AccountCircleIcon fontSize='small' />
-						</Button>
-						<Button aria-controls='customized-menu' aria-haspopup='true'>
-							<ContactPhoneIcon fontSize='small' />
-						</Button>
+						</Button>	
 					</div>
 				</Toolbar>
 			</AppBar>

@@ -10,8 +10,9 @@
 	}
 
 	.MuiButtonBase-root {
-		border-radius: 70%;
-		min-width: none;
+		border-radius: 50%;
+		padding: 0.7rem;
+		min-width: 0;
 		margin: 5px;
 		background: $azul;
 		color: $crema;
