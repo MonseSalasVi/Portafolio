@@ -1,4 +1,3 @@
-//import React, { useEffect, useState } from "react";
 import "firebase/firestore";
 
 import firebase from "./settings"; //inicializacion de firebase
