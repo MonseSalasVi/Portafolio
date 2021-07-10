@@ -1,0 +1,65 @@
+.education {
+	padding-top: 8rem;
+	padding-bottom: 4rem;
+	height: auto;
+	background: $verdeClaro;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	.education-title h3 {
+		color: $azul;
+		margin-bottom: 2rem;
+	}
+
+	.education-card {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 1rem;
+		display: flex;
+		flex-direction: column;
+		padding: 1.5rem;
+		border: 5px solid $crema;
+
+		.education-description {
+			text-align: center;
+			.title {
+				margin: 1rem;
+				color: $rosaFuerte;
+				font-weight: bolder;
+				font-size: 1rem;
+			}
+			.description {
+				color: $azul;
+			}
+			.fecha {
+				color: $verde;
+			}
+			a {
+				margin: 1rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: $rosaFuerte;
+			}
+		}
+	}
+}
+
+@media (min-width: 0px) and (orientation: landscape) {
+	.education {
+		flex-direction: column;
+		
+		.education-card {
+			height: auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			.education-description {
+				width: 60%;
+				margin: 1rem;
+			}
+		}
+	}
+}

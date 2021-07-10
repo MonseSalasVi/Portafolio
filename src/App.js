@@ -1,12 +1,18 @@
 import "./App.scss";
 import Nav from "./components/Nav";
-import Intro from "./Pages/intro";
+import Aboutme from "./Pages/Aboutme/index";
+import Proyects from "./Pages/Proyects/index";
+import Experience from "./Pages/Experience/index";
+import Education from "./Pages/Education/index";
 
 function App() {
 	return (
 		<div className='container'>
 			<Nav />
-			<Intro />
+			<Aboutme />
+			<Experience />
+			<Proyects />
+			<Education />
 		</div>
 	);
 }

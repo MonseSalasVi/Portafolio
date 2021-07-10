@@ -1,5 +1,6 @@
 .intro {
-	padding: 1rem;
+	padding-top: 8rem;
+	padding-bottom: 1rem;
 	height: auto;
 	background: $rosa;
 	display: flex;
@@ -9,7 +10,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin: 1rem 4rem;
+		margin: 2rem 4rem;
 		.fotoPerfil {
 			width: 13rem;
 			border-radius: 50%;
@@ -20,8 +21,9 @@
 		text-align: center;
 		display: flex;
 		flex-direction: column;
-		.about-title {
+		.about-title h2 {
 			color: $azul;
+			font-family: "Secular One", sans-serif;
 		}
 		.about-me {
 			display: flex;
@@ -39,7 +41,7 @@
 			display: flex;
 			margin-top: 20px;
 			align-items: center;
-			justify-content: space-between;
+			justify-content: space-evenly;
 
 			svg {
 				color: $azul;
@@ -54,12 +56,13 @@
 
 @media (min-width: 0px) and (orientation: landscape) {
 	.intro {
+		//margin-top: 5rem;
 		display: flex;
 		flex-direction: row;
 		.about {
 			align-items: center;
 			.about-me {
-				font-size: .7rem;
+				font-size: 0.7rem;
 				width: 80%;
 				p {
 					margin-left: 10px;
@@ -73,7 +76,7 @@
 			.datos {
 				margin-top: 3rem;
 				display: flex;
-				flex-direction: row;
+				flex-wrap: wrap;
 				justify-content: center;
 				align-items: center;
 				p {

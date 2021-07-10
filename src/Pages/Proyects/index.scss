@@ -1,0 +1,30 @@
+.proyects {
+	padding-top: 8rem;
+	padding-bottom: 1rem;
+	height: auto;
+	.proyects-title h3 {
+		text-align: center;
+		color: $rosa;
+		font-family: "Secular One", sans-serif;
+		margin-bottom: 2rem;
+	}
+	.proyects-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		word-wrap: break-word;
+	}
+}
+
+@media (min-width: 0px) and (orientation: landscape) {
+	.proyects {
+		height: auto;
+
+		.proyects-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			word-wrap: break-word;
+		}
+	}
+}

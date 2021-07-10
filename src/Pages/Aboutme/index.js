@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import Monse from "../assets/personal/Monse.jpeg";
-import { dataEducation } from "../Firebase/firebaseContext";
+import React from "react";
+import Monse from "../../assets/personal/Monse.jpeg";
+
 //material
 import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
@@ -12,27 +12,14 @@ import AlternateEmailIcon from "@material-ui/icons/AlternateEmail";
 import PhoneIcon from "@material-ui/icons/Phone";
 import RoomIcon from "@material-ui/icons/Room";
 
-function Intro() {
-	const [educationList, setEducationList] = useState([]);
-	const [loading, setLoading] = useState(true);
-
-	//if (loading) return <div>loading</div>;
-
-	useEffect(() => {
-		async function getData() {
-			const data = await dataEducation();
-			setEducationList(data);
-			setLoading(false);
-		}
-		getData();
-	}, []);
+function Aboutme() {
 
 	return (
-		<div className='intro'>
+		<div className='intro'  id='aboutme'>
 			<div className='img-container'>
-				<img className='fotoPerfil' src={Monse} />{" "}
+				<img alt="Monse.png" className='fotoPerfil' src={Monse} />{" "}
 			</div>
-			<div className='about'>
+			<div className='about' >
 				<div className='about-title'>
 					<Typography variant='h2'>Front-end Developer</Typography>
 				</div>
@@ -46,7 +33,7 @@ function Intro() {
 					</div>
 					<div>
 						<Typography>
-							I am a woman who likes challenges, i am proactive, passionate and
+							I am a woman who likes challenges, I am proactive, passionate and
 							I am constantly learning new things.
 						</Typography>
 					</div>
@@ -94,4 +81,4 @@ function Intro() {
 	);
 }
 
-export default Intro;
+export default Aboutme;

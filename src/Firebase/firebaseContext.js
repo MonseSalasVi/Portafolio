@@ -9,4 +9,16 @@ const dataEducation = async () => {
 	return data.docs.map(doc => doc.data());
 };
 
-export { dataEducation };
+const dataProyects = async () => {
+	const db = firebase.firestore();
+	const data = await db.collection("proyectos").get();
+	return data.docs.map(doc => doc.data());
+}
+const dataExperience = async () => {
+	const db = firebase.firestore();
+	const data = await db.collection("experienciaLaboral").get();
+	return data.docs.map(doc => doc.data());
+}
+
+
+export { dataEducation, dataProyects, dataExperience };

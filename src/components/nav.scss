@@ -1,4 +1,4 @@
-.nav {
+.nav {	
 	.MuiToolbar-root {
 		display: flex;
 		flex-direction: column;
@@ -8,17 +8,15 @@
 		color: $crema;
 		font-size: 2.5rem;
 	}
-
-	.MuiButtonBase-root {
-		border-radius: 50%;
-		padding: 0.7rem;
-		min-width: 0;
+	.MuiLink-root  {
 		margin: 5px;
-		background: $azul;
 		color: $crema;
+		align-items: center;
+		justify-content: center;
+		
 		:hover {
-			background: $crema;
 			color: $azul;
+			background: $verde;
 		}
 	}
 }
