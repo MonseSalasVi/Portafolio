@@ -1,0 +1,32 @@
+.nav {	
+	.MuiToolbar-root {
+		display: flex;
+		flex-direction: column;
+		background: $verde;
+	}
+	.MuiTypography-root {
+		color: $crema;
+		font-size: 2.5rem;
+	}
+	.MuiLink-root  {
+		margin: 5px;
+		color: $crema;
+		align-items: center;
+		justify-content: center;
+		
+		:hover {
+			color: $azul;
+			background: $verde;
+		}
+	}
+}
+@media (min-width: 0px) and (orientation: landscape) {
+	.container {
+		.nav .MuiToolbar-root {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			height: 80px;
+		}
+	}
+}

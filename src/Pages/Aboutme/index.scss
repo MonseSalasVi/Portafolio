@@ -1,0 +1,108 @@
+.intro {
+	padding-top: 8rem;
+	padding-bottom: 1rem;
+	height: auto;
+	background: $rosa;
+	display: flex;
+	flex-direction: column;
+
+	.img-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 2rem 4rem;
+		.fotoPerfil {
+			width: 13rem;
+			border-radius: 50%;
+		}
+	}
+
+	.about {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		.about-title h2 {
+			color: $azul;
+			font-family: "Secular One", sans-serif;
+		}
+		.about-me {
+			display: flex;
+			flex-direction: column;
+			p {
+				margin-top: 9px;
+				color: $verde;
+				font-weight: bolder;
+			}
+		}
+		.datos {
+			display: none;
+		}
+		.datos-cel {
+			display: flex;
+			margin-top: 20px;
+			align-items: center;
+			justify-content: space-evenly;
+
+			svg {
+				color: $azul;
+				font-size: 27px;
+			}
+			a:hover {
+				color: $crema;
+			}
+		}
+	}
+}
+
+@media (min-width: 0px) and (orientation: landscape) {
+	.intro {
+		display: flex;
+		flex-direction: row;
+		.about {
+			align-items: center;
+			.about-me {
+				font-size: 0.7rem;
+				width: 80%;
+				p {
+					margin-left: 10px;
+					font-size: 1.5rem;
+					text-align: start;
+				}
+			}
+			.datos-cel {
+				display: none;
+			}
+			.datos {
+				margin-top: 3rem;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				p {
+					margin-top: 5px;
+					color: $azul;
+					font-weight: bolder;
+
+					svg {
+						margin-left: 10px;
+						margin-right: 2px;
+					}
+				}
+				a {
+					margin-top: 5px;
+					color: $azul;
+					font-weight: bolder;
+					align-items: center;
+					text-decoration: underline;
+					svg {
+						margin-left: 10px;
+						margin-right: 2px;
+					}
+				}
+				a:hover {
+					color: $crema;
+				}
+			}
+		}
+	}
+}
