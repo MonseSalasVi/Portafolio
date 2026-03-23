@@ -1,14 +1,26 @@
-import { useState } from 'react'
-import './App.css'
+import { useState, useEffect } from "react"
+import { translations } from "./data/translations"
+import Header from "./components/Header"
+import About from "./components/about"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [lang, setLang] = useState("es")
+
+  useEffect(() => {
+    const savedLang = localStorage.getItem("lang")
+    if (savedLang) setLang(savedLang)
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem("lang", lang)
+  }, [lang])
+
+  const t = translations[lang]
 
   return (
-     <div className="h-screen flex items-center justify-center ">
-      <h1 className="text-5xl text-white font-bold">
-        Todo funcionando 
-      </h1>
+    <div className="bg-background text-foreground">
+      <Header />
+      <About />
     </div>
   )
 }
