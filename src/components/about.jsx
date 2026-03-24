@@ -5,7 +5,7 @@ const About = () => {
   const { t } = useLanguage()
 
   return (
-    <section id="about" className="py-20 px-6">
+    <section id="about" className="py-20 px-6 opacity-0 translate-y-10 animate-fadeIn">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
         {/*  Imagen con borde animado */}

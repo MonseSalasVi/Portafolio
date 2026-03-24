@@ -6,7 +6,7 @@ const Contact = () => {
     const { t } = useLanguage()
 
     return (
-        <section id="contact" className="py-20 px-6">
+        <section id="contact" className="py-20 px-6 opacity-0 translate-y-10 animate-fadeIn">
             <div className="max-w-5xl mx-auto">
 
                 {/* Title */}
@@ -21,37 +21,26 @@ const Contact = () => {
 
                         <a
                             href="mailto:cmonsev@gmail.com"
-                            className="flex items-center gap-3 p-4 bg-card/70 backdrop-blur-md rounded-xl hover:shadow-lg hover:-translate-y-1 transition group w-auto"
-                        >
-                            <Mail className="text-xl text-foreground/70 group-hover:text-primary transition" />
-                            <span className="text-gradient animate-gradient">
-                                Email
+                            className="gradient-border">
+                            <span className="gradient-border-inner px-2 py-1 rounded text-xs">
+                                <Mail size={"20px"} />  Email
                             </span>
                         </a>
-
                         <a
                             href="https://github.com/MonseSalasVi"
                             target="_blank"
-                            className="flex items-center gap-3 p-4 bg-card/70 backdrop-blur-md rounded-xl hover:shadow-lg hover:-translate-y-1 transition group w-auto"
-                        >
-                            <FaGithub className="text-xl text-foreground/70 group-hover:text-primary transition" />
-                            <span className="text-gradient animate-gradient">GitHub</span>
+                            className="gradient-border">
+                            <span className="gradient-border-inner px-2 py-1 rounded text-xs">
+                                <FaGithub size={"20px"} /> GitHub</span>
                         </a>
-
                         <a
                             href="https://mx.linkedin.com/in/monse-salasv/"
                             target="_blank"
-                            className="flex items-center gap-3 p-4 bg-card/70 backdrop-blur-md rounded-xl hover:shadow-lg hover:-translate-y-1 transition group w-auto"
-                        >
-                            <FaLinkedin className="text-xl text-foreground/70 group-hover:text-primary transition" />
-                            <span className="text-gradient animate-gradient">LinkedIn</span>
+                            className="gradient-border">
+                            <span className="gradient-border-inner px-2 py-1 rounded text-xs"><FaLinkedin size={"20px"} /> LinkedIn</span>
                         </a>
-
-                        <a
-                            className="flex items-center gap-3 p-4 bg-card/70 backdrop-blur-md rounded-xl hover:shadow-lg hover:-translate-y-1 transition group w-auto"
-                        >
-                            <MapPin className="text-xl text-foreground/70 group-hover:text-primary transition" />
-                            <span className="text-gradient animate-gradient">Zapopan, Jalisco México</span>
+                        <a className="gradient-border">
+                            <span className="gradient-border-inner px-2 py-1 rounded text-xs"> <MapPin size={"20px"} /> Zapopan, Jalisco México</span>
                         </a>
                     </div>
                 </div>

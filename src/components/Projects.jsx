@@ -1,9 +1,9 @@
 import { useLanguage } from '../hooks/useLanguage'
 const Projects = () => {
-    const {t } = useLanguage()
+  const { t } = useLanguage()
 
   return (
-    <section id="projects" className="py-20 px-6">
+    <section id="projects" className="py-20 px-6 opacity-0 translate-y-10 animate-fadeIn">
       <div className="max-w-5xl mx-auto">
 
         <h2 className="text-3xl font-bold mb-10">
@@ -14,7 +14,7 @@ const Projects = () => {
           {t.experience.jobs.map((job, index) => (
             <div
               key={index}
-              className="bg-card rounded-lg p-6 shadow-md transition-transform hover:-translate-y-1"
+              className="bg-card-1 rounded-lg p-6 shadow-md transition-transform hover:-translate-y-1"
             >
               {/* Empresa */}
               <div className="flex justify-between items-center mb-4 flex-wrap gap-2">
@@ -33,13 +33,12 @@ const Projects = () => {
 
               {/* Tools */}
               {job.tools && (
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-4 justify-end">
                   {job.tools.map((tool, i) => (
-                    <span
-                      key={i}
-                      className="bg-accent px-3 py-1 rounded-full text-sm"
-                    >
-                      {tool}
+                    <span key={i} className="bg-card-2 px-3 py-1 rounded-full text-sm">
+                      <span className="text-sm">
+                        {tool}
+                      </span>
                     </span>
                   ))}
                 </div>
@@ -47,7 +46,7 @@ const Projects = () => {
 
               {/* Sub proyectos */}
               {job.projects && (
-                <div className="mt-6 space-y-4">
+                <div className="mt-6 space-y-4 flex flex-col gap-6">
                   {job.projects.map((project, i) => (
                     <div
                       key={i}
@@ -60,11 +59,11 @@ const Projects = () => {
                         {project.description}
                       </p>
 
-                      <div className="flex flex-wrap gap-2 mt-2">
+                      <div className="flex flex-wrap gap-2 mt-2 justify-end ">
                         {project.tools.map((tool, j) => (
                           <span
                             key={j}
-                            className="bg-blueLight text-primary px-2 py-1 rounded text-xs"
+                            className="bg-card-2 px-3 py-1 rounded-full text-sm"
                           >
                             {tool}
                           </span>

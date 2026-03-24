@@ -1,3 +1,4 @@
+import { Key } from "lucide-react";
 import { IoLogoJavascript } from "react-icons/io";
 
 export const translations = {
@@ -25,22 +26,6 @@ export const translations = {
     experience: {
       title: "Experiencia",
       jobs: [
-        {
-          title: "Galapago Agroconsultores",
-          company: "Galapago Agroconsultores",
-          date: "Julio 2020 - Junio 2021",
-          image: "/assets/galapp.png",
-          description:
-            "Desarrollo de nuevas funcionalidades para la aplicación web, incluyendo pruebas automatizadas. Análisis de datos para mejorar procesos de clientes y soporte personalizado.",
-          tools: [
-            "React",
-            "Material UI",
-            "Sass",
-            "SQL",
-            "Firebase",
-            "Cypress",
-          ],
-        },
         {
           company: "Keyrus México",
           date: "Sep 2022 - Actualidad",
@@ -77,38 +62,62 @@ export const translations = {
               tools: ["Salesforce", "SCSS", "JavaScript"],
             },
           ],
-        }
+        },
+        {
+          title: "Galapago Agroconsultores",
+          company: "Galapago Agroconsultores",
+          date: "Julio 2020 - Junio 2021",
+          image: "/assets/galapp.png",
+          description:
+            "Desarrollo de nuevas funcionalidades para la aplicación web, incluyendo pruebas automatizadas. Análisis de datos para mejorar procesos de clientes y soporte personalizado.",
+          tools: [
+            "React",
+            "Material UI",
+            "Sass",
+            "SQL",
+            "Firebase",
+            "Cypress",
+          ],
+        },
       ],
     },
-    skills: [
-      {
-        title: "Lenguajes de programación",
-        items: ["JavaScript", "HTML5 & CSS3", "SASS / SCSS"],
-      },
-      {
-        title: "Librerías",
-        items: ["React.js", "Medusa.js", "Tailwind CSS", "Frontastic"],
-      },
-      {
-        title: "E-commerce & CMS",
-        items: ["Salesforce Commerce Cloud", "Builder.io"],
-      },
-      {
-        title: "Marketing & Analítica",
-        items: ["Google Tag Manager", "Google Analytics"],
-      },
-      {
-        title: "Flujo de trabajo y herramientas",
-        items: [
-          "Git",
-          "GitHub",
-          "GitLab",
-          "QA Testing",
-          "Agile Methodologies",
-          "UI/UX Design (Figma)",
-        ],
-      },
-    ]
+    skills: {
+      title: "Habilidades",
+      items: [
+        {
+          title: "Lenguajes de programación",
+          key: "languages",
+          items: ["JavaScript", "HTML5 & CSS3", "SASS / SCSS"],
+        },
+        {
+          title: "Librerías",
+          key: "libraries",
+          items: ["React.js", "Medusa.js", "Tailwind CSS", "Frontastic"],
+        },
+        {
+          title: "E-commerce & CMS",
+          key: "ecommerce",
+          items: ["Salesforce Commerce Cloud", "Builder.io"],
+        },
+        {
+          title: "Marketing & Analítica",
+          key: "marketing",
+          items: ["Google Tag Manager", "Google Analytics"],
+        },
+        {
+          title: "Flujo de trabajo y herramientas",
+          key: "tools",
+          items: [
+            "Git",
+            "GitHub",
+            "GitLab",
+            "QA Testing",
+            "Agile Methodologies",
+            "UI/UX Design (Figma)",
+          ],
+        },
+      ]
+    }
   },
   en: {
     nav: {
@@ -134,22 +143,6 @@ export const translations = {
     experience: {
       title: "Experience",
       jobs: [
-        {
-          title: "Galapago Agroconsultores",
-          company: "Galapago Agroconsultores",
-          date: "July 2020 - June 2021",
-          image: "/assets/galapp.png",
-          description:
-            "Development of new features for the web application, including automated testing. Data analysis to improve customer processes and personalized support for clients.",
-          tools: [
-            "React",
-            "Material UI",
-            "Sass",
-            "SQL",
-            "Firebase",
-            "Cypress",
-          ],
-        },
         {
           title: "Keyrus Mexico",
           company: "Keyrus Mexico",
@@ -188,36 +181,60 @@ export const translations = {
             },
           ],
         },
+        {
+          title: "Galapago Agroconsultores",
+          company: "Galapago Agroconsultores",
+          date: "July 2020 - June 2021",
+          image: "/assets/galapp.png",
+          description:
+            "Development of new features for the web application, including automated testing. Data analysis to improve customer processes and personalized support for clients.",
+          tools: [
+            "React",
+            "Material UI",
+            "Sass",
+            "SQL",
+            "Firebase",
+            "Cypress",
+          ],
+        }
       ],
     },
-    skills: [
-      {
-        title: "Languages",
-        items: ["JavaScript", "HTML5 & CSS3", "SASS / SCSS"],
-      },
-      {
-        title: "Frameworks",
-        items: ["React.js", "Medusa.js", "Tailwind CSS", "Frontastic"],
-      },
-      {
-        title: "E-commerce & CMS",
-        items: ["Salesforce Commerce Cloud", "Builder.io"],
-      },
-      {
-        title: "Marketing & Analytics",
-        items: ["Google Tag Manager", "Google Analytics"],
-      },
-      {
-        title: "Workflow & Tools",
-        items: [
-          "Git",
-          "GitHub",
-          "GitLab",
-          "QA Testing",
-          "Agile Methodologies",
-          "UI/UX Design (Figma)",
-        ],
-      },
-    ]
+    skills: {
+      title: "Skills",
+      items: [
+        {
+          title: "Languages",
+           key: "languages",
+          items: ["JavaScript", "HTML5 & CSS3", "SASS / SCSS"],
+        },
+        {
+          title: "Frameworks",
+           key: "libraries",
+          items: ["React.js", "Medusa.js", "Tailwind CSS", "Frontastic"],
+        },
+        {
+          title: "E-commerce & CMS",
+          key: "ecommerce",
+          items: ["Salesforce Commerce Cloud", "Builder.io"],
+        },
+        {
+          title: "Marketing & Analytics",
+          key: "marketing",
+          items: ["Google Tag Manager", "Google Analytics"],
+        },
+        {
+          title: "Workflow & Tools",
+          key: "tools",
+          items: [
+            "Git",
+            "GitHub",
+            "GitLab",
+            "QA Testing",
+            "Agile Methodologies",
+            "UI/UX Design (Figma)",
+          ],
+        },
+      ]
+    }
   },
 }

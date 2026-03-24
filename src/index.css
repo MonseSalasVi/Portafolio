@@ -7,27 +7,117 @@
   --foreground: 39 38 67;
   --primary: 44 105 140;
   --accent: 186 232 232;
-  --card: 200 100 324 / 0.8;
+  --cardbluelight: 15 23 42;
   --card-border: 0 0 0 / 0.06;
   --muted: 100 116 139;
+
+  .bg-card-1 {
+    background-color: rgb(var(--cardbluelight));
+    border: 1px solid rgb(var(--card-border));
+    color: rgb(var(--background));
+  }
+
+  .bg-card-2 {
+    background-color: rgb(var(--background));
+    border: 1px solid rgb(var(--cardbluelight));
+    color: rgb(var(--cardbluelight));
+  }
+
+  .bg-card-2 {
+    box-shadow: 0 2px 4px rgba(var(--cardbluelight));
+  }
+
+  .gradient-border {
+    position: relative;
+    z-index: 0;
+    border-radius: 9999px;
+    /* fully rounded */
+    padding: 2px;
+    /* ancho del borde */
+    background: linear-gradient(90deg, #a855f7, #ec4899, #3b82f6, #a855f7);
+    background-size: 200% 200%;
+    animation: gradientMove 2s ease infinite;
+    display: inline-block;
+    height: fit-content;
+  }
+
+  .gradient-border-inner {
+    background: rgb(var(--background));
+    color: rgb(var(--cardbluelight));
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    /* igual a px-3 py-1 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    height: fit-content;
+  }
 }
 
 /* Dark mode */
 .dark {
   --background: 15 23 42;
   --foreground: 226 232 240;
- --card: 200 100 324 / 0.8;
+  --cardbluelight: 227 246 245;
   --card-border: 255 255 255 / 0.08;
   --primary: 56 189 248;
   --accent: 186 232 232;
+
+  .bg-card-1 {
+    background-color: rgb(var(--cardbluelight));
+    border: 1px solid rgb(var(--card-border));
+    color: rgb(var(--background));
+  }
+
+  .bg-card-2 {
+    background-color: rgb(var(--background));
+    border: 1px solid rgb(var(--cardbluelight));
+    color: rgb(var(--cardbluelight));
+  }
+
+  .bg-card-2 {
+    box-shadow: 0 4px 6px rgba(var(--cardbluelight));
+  }
+
+  .gradient-border {
+    position: relative;
+    z-index: 0;
+    border-radius: 9999px;
+    /* fully rounded */
+    padding: 2px;
+    /* ancho del borde */
+    background: linear-gradient(90deg, #a855f7, #ec4899, #3b82f6, #a855f7);
+    background-size: 200% 200%;
+    animation: gradientMove 2s ease infinite;
+    display: inline-block;
+    height: fit-content;
+  }
+
+  .gradient-border-inner {
+    background: rgb(var(--background));
+    color: rgb(var(--cardbluelight));
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    /* igual a px-3 py-1 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    height: fit-content;
+  }
 }
 
 body {
   background-color: rgb(var(--background));
   color: rgb(var(--foreground));
-
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 @keyframes gradientMove {
   0% {
@@ -58,4 +148,15 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease forwards;
 }
