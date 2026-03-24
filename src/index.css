@@ -1,37 +1,31 @@
 @import "tailwindcss";
 
-/* 🌞 Light mode */
+/* Light mode */
 :root {
+  /* Base */
   --background: 227 246 245;
-  /* #e3f6f5 */
   --foreground: 39 38 67;
-  /* #272643 */
-
   --primary: 44 105 140;
-  /* #2c698c */
   --accent: 186 232 232;
-  /* #bae8e8 */
-
-  --card: 255 255 255;
-  /* #ffffff */
+  --card: 200 100 324 / 0.8;
+  --card-border: 0 0 0 / 0.06;
+  --muted: 100 116 139;
 }
 
-/* 🌙 Dark mode */
+/* Dark mode */
 .dark {
-  --background: 39 38 67;
-  /* #272643 */
-  --foreground: 227 246 245;
-
-  --primary: 44 105 140;
+  --background: 15 23 42;
+  --foreground: 226 232 240;
+ --card: 200 100 324 / 0.8;
+  --card-border: 255 255 255 / 0.08;
+  --primary: 56 189 248;
   --accent: 186 232 232;
-
-  --card: 55 54 80;
-  /* un tono más claro que fondo */
 }
 
 body {
   background-color: rgb(var(--background));
   color: rgb(var(--foreground));
+
 }
 
 
@@ -57,12 +51,11 @@ body {
 .text-gradient {
   background-image: linear-gradient(to right,
       #a855f7,
-      /* morado */
       #ec4899,
-      /* rosa */
-      #3b82f6
-      /* azul */
-    );
+      #3b82f6);
+
+  background-clip: text;
   -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }

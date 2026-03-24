@@ -1,3 +1,5 @@
+import { IoLogoJavascript } from "react-icons/io";
+
 export const translations = {
   es: {
     nav: {
@@ -15,8 +17,99 @@ export const translations = {
       text3:
         "Me adapto fácilmente a nuevos entornos, disfruto aprender nuevas herramientas y trabajar en equipos ágiles.",
     },
+    contact: {
+      title: "Contacto",
+      subtitle:
+        "Puedes contactarme si quieres colaborar, tienes un proyecto o simplemente quieres conectar.",
+    },
+    experience: {
+      title: "Experiencia",
+      jobs: [
+        {
+          title: "Galapago Agroconsultores",
+          company: "Galapago Agroconsultores",
+          date: "Julio 2020 - Junio 2021",
+          image: "/assets/galapp.png",
+          description:
+            "Desarrollo de nuevas funcionalidades para la aplicación web, incluyendo pruebas automatizadas. Análisis de datos para mejorar procesos de clientes y soporte personalizado.",
+          tools: [
+            "React",
+            "Material UI",
+            "Sass",
+            "SQL",
+            "Firebase",
+            "Cypress",
+          ],
+        },
+        {
+          company: "Keyrus México",
+          date: "Sep 2022 - Actualidad",
+          description:
+            "Consultora digital enfocada en eCommerce, CRM, Datos y soluciones MarTech. Participación en múltiples proyectos empresariales.",
+          projects: [
+            {
+              name: "Rotoplas",
+              description: "Desarrollo y diseño usando Builder.io.",
+              tools: ["JavaScript", "TypeScript", "Qwik", "Builder.io"],
+            },
+            {
+              name: "Coflex",
+              description:
+                "Integración de Google Tag Manager y Analytics, validación de pasarela de pago.",
+              tools: ["React", "Tailwind", "TypeScript", "GTM"],
+            },
+            {
+              name: "MPS",
+              description:
+                "Desarrollo de plataformas B2C, B2B y administrativas.",
+              tools: ["Medusa.js", "React", "Tailwind"],
+            },
+            {
+              name: "Reebok",
+              description:
+                "Mantenimiento y mejoras según requerimientos del negocio.",
+              tools: ["Salesforce", "SCSS", "JavaScript"],
+            },
+            {
+              name: "CYA",
+              description:
+                "Mantenimiento y mejoras según requerimientos del negocio.",
+              tools: ["Salesforce", "SCSS", "JavaScript"],
+            },
+          ],
+        }
+      ],
+    },
+    skills: [
+      {
+        title: "Lenguajes de programación",
+        items: ["JavaScript", "HTML5 & CSS3", "SASS / SCSS"],
+      },
+      {
+        title: "Librerías",
+        items: ["React.js", "Medusa.js", "Tailwind CSS", "Frontastic"],
+      },
+      {
+        title: "E-commerce & CMS",
+        items: ["Salesforce Commerce Cloud", "Builder.io"],
+      },
+      {
+        title: "Marketing & Analítica",
+        items: ["Google Tag Manager", "Google Analytics"],
+      },
+      {
+        title: "Flujo de trabajo y herramientas",
+        items: [
+          "Git",
+          "GitHub",
+          "GitLab",
+          "QA Testing",
+          "Agile Methodologies",
+          "UI/UX Design (Figma)",
+        ],
+      },
+    ]
   },
-
   en: {
     nav: {
       about: "About",
@@ -33,5 +126,98 @@ export const translations = {
       text3:
         "I adapt quickly to new environments, enjoy learning new tools, and thrive in agile teams.",
     },
+    contact: {
+      title: "Contact",
+      subtitle:
+        "Feel free to reach out if you want to collaborate, have a project in mind, or just want to connect.",
+    },
+    experience: {
+      title: "Experience",
+      jobs: [
+        {
+          title: "Galapago Agroconsultores",
+          company: "Galapago Agroconsultores",
+          date: "July 2020 - June 2021",
+          image: "/assets/galapp.png",
+          description:
+            "Development of new features for the web application, including automated testing. Data analysis to improve customer processes and personalized support for clients.",
+          tools: [
+            "React",
+            "Material UI",
+            "Sass",
+            "SQL",
+            "Firebase",
+            "Cypress",
+          ],
+        },
+        {
+          title: "Keyrus Mexico",
+          company: "Keyrus Mexico",
+          date: "Sep 2022 - Present",
+          description:
+            "Digital consulting company focused on eCommerce, CRM, Data, and MarTech solutions. Worked on multiple enterprise-level projects.",
+          projects: [
+            {
+              name: "Rotoplas",
+              description: "Development and design using Builder.io.",
+              tools: ["JavaScript", "TypeScript", "Qwik", "Builder.io"],
+            },
+            {
+              name: "Coflex",
+              description:
+                "Integration of Google Tag Manager and Analytics, payment gateway validation.",
+              tools: ["React", "Tailwind", "TypeScript", "GTM"],
+            },
+            {
+              name: "MPS",
+              description:
+                "Development of B2C, B2B and admin platforms.",
+              tools: ["Medusa.js", "React", "Tailwind"],
+            },
+            {
+              name: "Reebok",
+              description:
+                "Maintenance and improvements based on business requirements.",
+              tools: ["Salesforce", "SCSS", "JavaScript"],
+            },
+            {
+              name: "CYA",
+              description:
+                "Maintenance and improvements based on business requirements.",
+              tools: ["Salesforce", "SCSS", "JavaScript"],
+            },
+          ],
+        },
+      ],
+    },
+    skills: [
+      {
+        title: "Languages",
+        items: ["JavaScript", "HTML5 & CSS3", "SASS / SCSS"],
+      },
+      {
+        title: "Frameworks",
+        items: ["React.js", "Medusa.js", "Tailwind CSS", "Frontastic"],
+      },
+      {
+        title: "E-commerce & CMS",
+        items: ["Salesforce Commerce Cloud", "Builder.io"],
+      },
+      {
+        title: "Marketing & Analytics",
+        items: ["Google Tag Manager", "Google Analytics"],
+      },
+      {
+        title: "Workflow & Tools",
+        items: [
+          "Git",
+          "GitHub",
+          "GitLab",
+          "QA Testing",
+          "Agile Methodologies",
+          "UI/UX Design (Figma)",
+        ],
+      },
+    ]
   },
 }
